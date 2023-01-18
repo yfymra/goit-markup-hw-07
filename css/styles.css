@@ -1423,8 +1423,8 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     
     width: 100vw;
     height: 100vh;
-    overflow: auto;
     z-index: 1;
+    overflow: auto;
     
     margin-left: auto;
     margin-right: auto;
@@ -1441,7 +1441,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     transition: transform var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
-@media screen and (max-height:600px) {
+@media screen and (max-height:795px) {
 
     .menu-container {
         justify-content: space-between;
@@ -1495,7 +1495,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 @media screen and (max-height:795px)  {
 
     .mobile-nav {
-        margin-bottom: 40px;
+        margin-bottom: 284px;
     }
 
 }
