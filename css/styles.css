@@ -1441,6 +1441,14 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     transition: transform var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
+@media screen and (orientation: landscape) {
+    
+    .menu-container {
+        overflow: auto;
+    }
+
+}
+
 .menu-container.is-open {
     transform: translateX(0);
 }
