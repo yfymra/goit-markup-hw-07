@@ -1156,7 +1156,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     opacity: 1;
     z-index: 3;
     overflow: auto;
-    min-width: 80vw;
+    min-width: calc(100vw - 36px);
     max-height: 80vh;
     padding-top: 24px;
     padding-bottom: 24px;
