@@ -1202,8 +1202,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     opacity: 0;
 }
 
-.modal-close-button,
-.menu-close-button {
+.modal-close-button {
     margin-left: auto;
     margin-bottom: 24px;
     display: flex;
@@ -1417,18 +1416,19 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     position: fixed;
     top: 0;
     left: 0;
-    
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     
     width: 100vw;
     height: 100vh;
+    overflow: auto;
     z-index: 1;
     
     margin-left: auto;
     margin-right: auto;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
@@ -1445,6 +1445,27 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     transform: translateX(0);
 }
 
+.menu-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 16px;
+
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--accent);
+    color: var(--close-btn-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
+}
+
 .menu-close-button:focus,
 .menu-close-button:active {
     background-color: var(--pressed-state);
@@ -1455,6 +1476,10 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     .menu-close-button {
         display: none;
     }
+}
+
+.mobile-navigation {
+    
 }
 
 .mobile-nav {
