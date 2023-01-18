@@ -1441,13 +1441,14 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     transition: transform var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
-@media screen and (orientation: landscape) {
-    
+@media screen and (max-height:600px) {
+
     .menu-container {
-        overflow: auto;
+        justify-content: space-between;
     }
 
 }
+
 
 .menu-container.is-open {
     transform: translateX(0);
@@ -1481,17 +1482,22 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 }
 
 @media (min-width: 768px) {
+
     .menu-close-button {
         display: none;
     }
 }
 
-.mobile-navigation {
-    
-}
-
 .mobile-nav {
     margin-bottom: auto; 
+}
+
+@media screen and (max-height:795px)  {
+
+    .mobile-nav {
+        margin-bottom: 40px;
+    }
+
 }
 
 .mobile-nav-item:not(:last-child) {
