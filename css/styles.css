@@ -312,6 +312,11 @@ ul {
     background-color: transparent;
 }
 
+.menu-open:focus,
+.menu-open:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 @media screen and (min-width: 768px) {
 
     .menu-open {
@@ -1149,10 +1154,11 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
 .modal {
     position: absolute;
-    top: 40%;
+    top: 96px;
     left: 50%;
     border-radius: 4px;
-    transform: translate(-50%, -40%);
+    transform: translateY(100vh - 96px);
+    transform: translateX(-50%);
     opacity: 1;
     z-index: 3;
     overflow: auto;
@@ -1189,13 +1195,10 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 1200px) {
 
     .modal {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 80px;
+        transform: translateY(100vh - 80px);
     }
-
 }
-
 
 .backdrop.is-hidden .modal {
     transform: translate(-70%, -70%);
