@@ -463,7 +463,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: var(--primary-brand);
+    background-color: var(--pressed-state);
     box-shadow: none;
 }
 
@@ -1119,7 +1119,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
 .footer-subscribe-button:hover,
 .footer-subscribe-button:focus {
-    background-color: var(--primary-brand);
+    background-color: var(--pressed-state);
     box-shadow: none;
 }
 
@@ -1406,7 +1406,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
 .modal-form-button:hover,
 .modal-form-button:focus {
-    background-color: var(--primary-brand);
+    background-color: var(--pressed-state);
     box-shadow: none;
 }
 
