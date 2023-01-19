@@ -1488,15 +1488,12 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     }
 }
 
-.mobile-nav {
-    margin-bottom: auto; 
+.mobile-menu-bottom {
+    margin-top: auto;
 }
 
-@media screen and (max-height: 795px) {
-
-    .mobile-nav {
-        margin-bottom: 40px;
-    }
+.mobile-nav {
+    margin-bottom: 40px; 
 }
 
 .mobile-nav-item:not(:last-child) {
@@ -1515,12 +1512,20 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
+.mobile-nav-link.current {
+        color: var(--pressed-state);
+}
+
 .mobile-contacts {
     margin-bottom: 48px;
 }
 
 .mobile-contacts-item:not(:last-child) {
     margin-bottom: 40px;
+}
+
+.mobile-contacts-link {
+    color: var(--primary-brand);
 }
 
 @media (max-width: 479px) {
