@@ -1440,15 +1440,6 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     transition: transform var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
-@media screen and (max-height:795px) {
-
-    .menu-container {
-        overflow-y: scroll;
-        justify-content: space-between;
-    }
-
-}
-
 
 .menu-container.is-open {
     transform: translateX(0);
@@ -1490,14 +1481,6 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
 .mobile-nav {
     margin-bottom: auto; 
-}
-
-@media screen and (max-height:795px)  {
-
-    .mobile-nav {
-        margin-bottom: 284px;
-    }
-
 }
 
 .mobile-nav-item:not(:last-child) {
@@ -1555,9 +1538,8 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
     .socials-list.mobile {
        display: flex;
-       flex-wrap: wrap;
-       row-gap: 24px;
-       justify-content: flex-start;
+       gap: 24px;
+       justify-content: space-between;
        align-items: center;
     }
 }
