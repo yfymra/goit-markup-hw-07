@@ -1195,7 +1195,6 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
     .modal {
         top: 80px;
-        transform: translateY(100vh - 80px);
     }
 }
 
