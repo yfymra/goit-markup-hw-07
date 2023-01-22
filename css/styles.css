@@ -1446,21 +1446,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     width: 100vw;
     height: 80vh;
     overflow-y: scroll;
-    
-    /*margin-left: auto;
-    margin-right: auto;
-    padding-top: 80px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;*/
 
-}
-
-@media screen and (max-height: 795px) {
-
-    .menu-container {
-        
-    }
 }
 
 .menu-container.is-open {
