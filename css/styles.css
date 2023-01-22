@@ -1160,7 +1160,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     transform: translateX(-50%);
     opacity: 1;
     z-index: 3;
-    overflow-y: scroll;
+    overflow: auto;
     min-width: 85vw;
     max-height: 70vh;
     padding-top: 24px;
@@ -1417,10 +1417,15 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     position: fixed;
     top: 0;
     left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
     width: 100vw;
     height: 100vh;
     z-index: 1;
+    overflow: auto;
     
     margin-left: auto;
     margin-right: auto;
@@ -1435,17 +1440,6 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     transform: translateX(100%);
 
     transition: transform var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
-}
-
-.menu {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    width: 100%;
-    height: 80vh;
-    overflow-y: scroll;
 }
 
 .menu-container.is-open {
