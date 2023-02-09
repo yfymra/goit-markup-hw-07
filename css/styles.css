@@ -887,7 +887,6 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        padding-left: 108px;
     }
    
 }
@@ -906,6 +905,22 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
 .footer-content {
     max-width: 264px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer-content {
+        margin-left: 96px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .footer-content {
+        margin-left: 0;
+    }
+
 }
 
 .logo-footer {
@@ -1003,6 +1018,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        margin-left: 92px;
     }
 
 }
