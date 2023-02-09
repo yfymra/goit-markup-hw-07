@@ -1207,13 +1207,6 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
 }
 
-@media screen and (min-width: 1200px) {
-
-    .modal {
-        top: 80px;
-    }
-}
-
 .backdrop.is-hidden .modal {
     transform: translate(-70%, -70%);
     opacity: 0;
